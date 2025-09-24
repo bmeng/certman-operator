@@ -98,13 +98,13 @@ graph TD
     classDef decision fill:#fff3e0,stroke:#e65100,stroke-width:2px
     classDef action fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
     classDef error fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef end fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef terminal fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
 
     class C,D controller
     class E,G,I,J,K,L,P,T,V,Z,BB,FF,MM,WW,XX decision
     class F,N,O,Q,R,S,U,X,EE,HH,II,JJ,KK,LL,OO,PP,QQ,RR,SS,TT,UU,VV,YY action
     class GG,NN error
-    class H,Y,AA end
+    class H,Y,AA terminal
 ```
 
 ## Key Flow Explanations
@@ -134,3 +134,10 @@ graph TD
 - **GCP**: Cloud DNS management
 - **Azure**: DNS Zone management
 - **FedRAMP**: Special hosted zone handling
+
+## Color Coding Legend
+- **Blue**: Controllers
+- **Orange**: Decision points
+- **Green**: Actions
+- **Red**: Error states
+- **Purple**: Terminal states
